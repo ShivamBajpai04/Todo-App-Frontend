@@ -1,12 +1,10 @@
 import "./App.css";
+import TodoListRenderer from "./components/todoListRenderer";
+
+
 
 function App() {
-
-	return (
-		<>
-			<div></div>
-		</>
-	);
+	return(<TodoListRenderer />)
 }
 
 export default App;
