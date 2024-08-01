@@ -4,12 +4,15 @@ import { useRecoilValue } from "recoil";
 import { todoListState } from "@/recoil/todos/todosAtom";
 
 export default function TodoListRenderer() {
-    const todoList = useRecoilValue(todoListState);
+  const todoList = useRecoilValue(todoListState);
 
-    return (
-        <CardWrapper>
-            {todoList.map(x => <Todo key={x._id} id={x._id} />)}
-        </CardWrapper>
-    )
-
+  return (
+    <div className="h-screen flex align-middle">
+      <CardWrapper>
+        {todoList.map((x) => (
+          <Todo key={x._id} id={x._id} />
+        ))}
+      </CardWrapper>
+    </div>
+  );
 }

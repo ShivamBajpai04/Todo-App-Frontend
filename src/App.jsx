@@ -1,10 +1,8 @@
 import "./App.css";
 import TodoListRenderer from "./components/todoListRenderer";
 
-
-
 function App() {
-	return(<TodoListRenderer />)
+  return <TodoListRenderer />;
 }
 
 export default App;
